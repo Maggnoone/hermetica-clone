@@ -21,8 +21,9 @@ const NavBar = () => {
     <div className="backdrop-blur-lg fixed w-full h-32 pt-6 z-50 to-transparent">
       <div className="flex justify-between items-center cursor-pointer w-full h-full px-6 2xl:px-16 md:filter-none">
         <div className="flex items-center h-full px-6 2xl:px-16 md:filter-none">
+          {/* <img src={"/public/static/images/hermeticaLogo.png"} alt="" /> */}
           <Image
-            src="/../public/assets/hermeticaLogo.png"
+            src="/../public/static/images/hermeticaLogo.png"
             alt=""
             width="285"
             height="190"
