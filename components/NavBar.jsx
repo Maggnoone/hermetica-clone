@@ -41,7 +41,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-        <div className="btn-group absolute right-5">
+        <div className="btn-group absolute right-5 top-12">
           <button className="btn border p-3 px-16 hover:bg-white hover:text-black rounded-full hidden md:flex bg-[#02071d]">
             Connect Wallet
           </button>
