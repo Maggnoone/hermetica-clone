@@ -52,15 +52,15 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-[0] top-[0] h-screen w-full backdrop-blur-lg ease-in duration-300"
+              ? "md:hidden fixed left-[0] top-[0] h-screen w-full backdrop-blur-lg ease-in duration-300 z-10"
               : ""
           }
         >
           <div
             className={
               nav
-                ? "fixed top-0 right-0 w-[50%] sm:w-[35%] md:w-[50%] h-screen bg-[#060C2C] p-2 ease-in duration-300"
-                : "fixed top-0 right-[-100%] p-2 ease-in duration-500"
+                ? "fixed top-0 right-0 w-[50%] sm:w-[35%] md:w-[50%] h-screen bg-[#060C2C] p-2 ease-in duration-300 z-11"
+                : "fixed top-0 right-[-100%] p-2 ease-in duration-500 z-11"
             }
           >
             <div
