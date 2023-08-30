@@ -20,8 +20,8 @@ const NavBar = () => {
 
   return (
     <div className="backdrop-blur-lg fixed w-full h-32 pt-6 z-50 to-transparent">
-      <div className="flex justify-center cursor-pointer w-full h-full px-6 2xl:px-16 md:filter-none">
-        <div className="flex justify-between items-center h-full w-full">
+      <div className="flex md:justify-between justify-center cursor-pointer w-full h-full px-6 2xl:px-16 md:filter-none">
+        <div className="flex justify-between items-center">
           {/* <img src={"/public/static/images/hermeticaLogo.png"} alt="" /> */}
           <Image src={Logo} alt="" width={200} height={100}></Image>
           <div onClick={handleNav} className="md:hidden flex justify-end pl-6">
@@ -52,15 +52,15 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-[0] top-[0] h-screen w-full backdrop-blur-lg ease-in duration-300 z-10"
+              ? "md:hidden fixed left-[0] top-[0] z-20 h-screen w-full backdrop-blur-lg ease-in duration-300"
               : ""
           }
         >
           <div
             className={
               nav
-                ? "fixed top-0 right-0 w-[50%] sm:w-[35%] md:w-[50%] h-screen bg-[#060C2C] p-2 ease-in duration-300 z-11"
-                : "fixed top-0 right-[-100%] p-2 ease-in duration-500 z-11"
+                ? "fixed top-0 right-0 w-[50%] sm:w-[35%] md:w-[50%] h-screen bg-[#060C2C] p-2 ease-in duration-300 z-10"
+                : "fixed top-0 right-[-100%] p-2 ease-in duration-500 z-10"
             }
           >
             <div
