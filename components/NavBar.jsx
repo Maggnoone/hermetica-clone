@@ -7,6 +7,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { SiDiscord } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { useRouter } from "next/navigation";
+import Logo from "../public/assets/hermeticaLogo.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -22,12 +23,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center cursor-pointer w-full h-full px-6 2xl:px-16 md:filter-none">
         <div className="flex items-center h-full px-6 2xl:px-16 md:filter-none">
           {/* <img src={"/public/static/images/hermeticaLogo.png"} alt="" /> */}
-          <Image
-            src="/../public/static/images/hermeticaLogo.png"
-            alt=""
-            width="285"
-            height="190"
-          ></Image>
+          <Image src={Logo} alt="" width="240" height="190"></Image>
           <div onClick={handleNav} className="md:hidden flex justify-end pl-6">
             <BiMenuAltRight size={40} />
           </div>
@@ -74,12 +70,7 @@ const NavBar = () => {
               <AiOutlineClose size={30} />
             </div>
             <div className="">
-              <Image
-                src="/../public/assets/hermeticaLogo.png"
-                width={250}
-                height={150}
-                alt=""
-              />
+              <Image src={Logo} width={250} height={150} alt="" />
             </div>
             <div className="py-8">
               <ul>
